@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
         mStartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //example modified from Google Developer documentation
                 new CountDownTimer(30000, 1000){
                     public void onTick(long millisUntilFinished) {
                         mTextView.setText("seconds remaining: " + millisUntilFinished / 1000);
